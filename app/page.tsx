@@ -46,17 +46,22 @@ export default function HomePage() {
     setIsLoading(true)
     
     try {
-      const response = await fetch('/api/contact', {
+      // Usar FormSubmit para sites estáticos
+      const response = await fetch('https://formsubmit.co/corretormerodio@gmail.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          nome: formData.nome,
+          telefone: formData.telefone,
+          tipo: formData.tipo,
+          _subject: `Novo contato do site - ${formData.tipo}`,
+          _template: 'table'
+        }),
       })
 
-      const result = await response.json()
-
-      if (result.success) {
+      if (response.ok) {
         setIsSubmitted(true)
         // Limpar o formulário
         setFormData({
