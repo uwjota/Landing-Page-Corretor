@@ -1,12 +1,12 @@
 # Landing Page - Nathan Consultor de Imóveis
 
-Landing page moderna e responsiva para o consultor de imóveis Nathan, desenvolvida com Next.js 14, TypeScript, Tailwind CSS e Framer Motion.
+Landing page para o consultor de imóveis Nathan, desenvolvida com Next.js 14, TypeScript, Tailwind CSS.
 
 ## 🚀 Funcionalidades
 
 - **Design Responsivo** - Funciona perfeitamente em desktop, tablet e mobile
 - **Animações Suaves** - Animações com Framer Motion para melhor UX
-- **Formulário de Contato** - Envio de emails para corretormerodio@gmail.com
+- **Formulário de Contato** - Envio de email
 - **Vídeo VSL** - Seção de vídeo com player integrado
 - **Depoimentos** - Carrossel de depoimentos de clientes
 - **Estatísticas** - Cards com números impressionantes
